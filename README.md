@@ -8,6 +8,15 @@ This project was developed as part of the DTU course **02456 Deep Learning** and
 
 ---
 
+## Highlights
+
+• Neural network implemented entirely from scratch (NumPy & JAX)  
+• Trained on **EMNIST Balanced dataset (47 classes)**  
+• Final model achieved **86.86% test accuracy**  
+• Hyperparameter optimization using **Weights & Biases sweeps**  
+• Analysis of training behaviour (activations, gradients, regularization)  
+• Comparison between **NumPy and JAX implementations**
+
 ## Project Goal
 
 The objective of the project was to build a neural network **without using high-level ML frameworks** and explore:
@@ -99,17 +108,22 @@ Hyperparameter tuning was conducted using **Weights & Biases sweeps**.
 
 ## Running the Project
 
+Clone the repository:
+
+git clone https://github.com/MathiasDyhr/neural-network-from-scratch-numpy-jax.git
+cd neural-network-from-scratch-numpy-jax
+
 Install dependencies:
 
 pip install jax jaxlib numpy tensorflow-datasets wandb scikit-learn matplotlib
 
-Run a single training experiment:
+Run a single EMNIST training experiment:
 
-python JAXNet_E47B.py
+python emnist/JAXNet_E47B.py
 
 Run hyperparameter sweep:
 
-python JAXNet_E47B_Sweep.py
+python emnist/JAXNet_E47B_Sweep.py
 
 ---
 
