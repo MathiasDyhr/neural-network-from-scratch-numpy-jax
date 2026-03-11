@@ -1,3 +1,5 @@
+![Model Performance](results/fig_adam.png)
+
 # Neural Network from Scratch (NumPy & JAX)
 
 Implementation of a configurable feed-forward neural network built from scratch using **NumPy** and **JAX**, trained on the **EMNIST Balanced dataset (47 classes)** for handwritten character recognition.
@@ -104,6 +106,40 @@ Run hyperparameter sweep:
 python JAXNet_E47B_Sweep.py
 
 ---
+
+## Model Results
+
+### Training Performance
+
+Training and test accuracy/loss during optimization using Adam and dropout regularization.
+
+![Training Curves](results/fig_adam.png)
+
+---
+
+### Confusion Matrix
+
+Performance of the final model on the EMNIST test dataset.
+
+![Confusion Matrix](results/Confusion_matrix.png)
+
+---
+
+### Activation Function Comparison
+
+Comparison of validation accuracy across different activation functions.
+
+![Activation Comparison](results/final_val.png)
+
+---
+
+### Gradient Stability
+
+Gradient norm behaviour during training showing the stability of different initialization strategies.
+
+![Gradient Norm](results/final_grad.png)
+
+
 
 ## My Contribution
 
