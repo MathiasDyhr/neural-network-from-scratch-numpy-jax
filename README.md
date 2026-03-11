@@ -176,5 +176,6 @@ Through this project I gained deeper understanding of:
 - Backpropagation mechanics  
 - Neural network training stability  
 - Effects of initialization and regularization  
-- Performance improvements using JAX  
+- Performance improvements using JAX
 - Experiment tracking and model evaluation workflows
+  
