@@ -1,0 +1,52 @@
+project: PyNet_M10_Sweep1_Final
+entity: DeepLearning_Group101
+program: PyNet_M10_Sweep.py
+method: grid
+metric:
+  name: val_accuracy
+  goal: maximize
+parameters:
+  # Architecture parameters
+  hidden_units:
+    values:
+      - [128, 128]
+  
+  activation:
+    values: ['relu', 'tanh','sigmoid']
+  
+  weights_init:
+    values: ['he','xavier','normal']
+  
+  # Optimizer parameters
+  optimizer:
+    values: ['adam']
+  
+  learning_rate:
+    values: [0.001]
+  
+  # Regularization parameters
+  dropout_p_value:
+    values: [0.3]
+  
+  l2_coeff:
+    values: [1e-8]
+
+  # Training parameters
+  batch_size:
+    values: [32]
+  
+  # Fixed parameters
+  num_epochs:
+    value: 100
+  
+  loss:
+    value: 'cross_entropy'
+  
+  use_grad_clipping:
+    value: false
+  
+  max_grad_norm:
+    value: 50.0
+
+  seed:
+    value: 42
