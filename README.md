@@ -85,11 +85,13 @@ Hyperparameter tuning was conducted using **Weights & Biases sweeps**.
     notebooks/
         JAXNet_Colab_Single_Run.ipynb
         JAXNet_Colab_Runner.ipynb
+        
     results/
         Confusion_matrix.png
         fig_adam.png
         final_val.png
         final_grad.png
+        
     config/
         sweep_config.yaml
 
